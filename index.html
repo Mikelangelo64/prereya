@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="script.js"></script><link href="styles.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="_container">
+        <div class="header__wrapper">
+          <button class="menu-burger popup-open" data-popup="_popup-menu">
+            <span></span>
+          </button>
+
+          <ul class="menu__lang">
+            <li>
+              <span class="lang-item lang-item-current">
+                en
+                <img
+                  src="./assets/img/label-language.svg"
+                  alt="language toggle"
+                />
+              </span>
+
+              <ul>
+                <li class="lang-item lang-item-1 lang-item-en lang-item-first">
+                  <a lang="rus-RU" hreflang="rus-RU" href="#1"> ru </a>
+                </li>
+                <li class="lang-item lang-item-1 lang-item-en lang-item-first">
+                  <a lang="de" hreflang="de" href="#1"> de </a>
+                </li>
+                <li class="lang-item lang-item-1 lang-item-en lang-item-first">
+                  <a lang="el" hreflang="el" href="#1"> el </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-menu"
+        data-popupname="_popup-menu"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="menu-burger popup__close">
+              <span></span>
+            </button>
+
+            <div class="popup-content popup-menu__content">
+              <button class="popup-open" data-popup="_popup-about">hui</button>
+
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="li">
+                    <a href="#" class="menu__item">Перея</a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="menu__item">Локация</a>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="menu__item">О проекте</a>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="menu__item">Придомовая территория</a>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="menu__item">Преимущества</a>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="menu__item">Квартиры</a>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="menu__item">Галерея</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="popup-menu__contacts">
+                <a href="tel:0961708080" class="call">
+                  <span class="call__label">
+                    <img src="./assets/img/call.svg" alt="call" />
+                  </span>
+                  <span class="call__phone">+38 097 050 00 33</span>
+                </a>
+
+                <ul class="socials">
+                  <li>
+                    <a href="#" class="socials__item">
+                      <span class="socials__label">
+                        <img
+                          src="./assets/img/socials/facebook.svg"
+                          alt="facebook"
+                        />
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="socials__item">
+                      <span class="socials__label">
+                        <img
+                          src="./assets/img/socials/instagram.svg"
+                          alt="instagram"
+                        />
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="socials__item">
+                      <span class="socials__label">
+                        <img
+                          src="./assets/img/socials/linkedIn.svg"
+                          alt="linkedIn"
+                        />
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="socials__item">
+                      <span class="socials__label">
+                        <img
+                          src="./assets/img/socials/youtube.svg"
+                          alt="youtube"
+                        />
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-call"
+        data-popupname="_popup-call"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="popup__close__label"
+                src="./assets/img/popup-close.svg"
+                alt="close"
+              />
+
+              <span class="popup__close__text">Close</span>
+            </button>
+
+            <div class="popup-content popup-call__content">
+              <div class="popup-content__img">
+                <div class="popup-content__img__container">
+                  <img src="./assets/img/popup-call.jpg" alt="call" />
+                </div>
+              </div>
+
+              <div class="popup-content__main">
+                <p class="popup-content__title">Хотите узнать подробнее?</p>
+
+                <p class="popup-content__description">
+                  Оставьте номер, и менеджер перезвонит вам в удобное время.
+                </p>
+
+                <form action="post" class="popup-form">
+                  <div>
+                    <label for="telephone">
+                      <input
+                        placeholder="Ваш телефон"
+                        type="telephone"
+                        name="telephone"
+                        id="telephone"
+                      />
+
+                      <span class="wpcf7-not-valid-tip">
+                        Важно заполнить это поле.
+                      </span>
+                    </label>
+                  </div>
+
+                  <p>
+                    <button type="submit">заказать звонок</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-thanks"
+        data-popupname="_popup-thanks"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="popup__close__label"
+                src="./assets/img/popup-close.svg"
+                alt="close"
+              />
+
+              <span class="popup__close__text">Close</span>
+            </button>
+
+            <div class="popup-content popup-thanks__content">
+              <div class="popup-content__img">
+                <div class="popup-content__img__container">
+                  <img src="./assets/img/popup-thanks.jpg" alt="call" />
+                </div>
+              </div>
+
+              <div class="popup-content__main">
+                <p class="popup-content__title">
+                  Спасибо вам за ваше время и усилия!
+                </p>
+
+                <p class="popup-content__description">
+                  Мы свяжемся с вами в ближайшее время.
+                </p>
+
+                <button class="popup__back button">
+                  <span>На главную</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-about fullscreen-phone"
+        data-popupname="_popup-about"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close desktop">
+              <img
+                class="popup__close__label"
+                src="./assets/img/popup-close.svg"
+                alt="close"
+              />
+
+              <span class="popup__close__text">Close</span>
+            </button>
+
+            <button class="popup__close mobile">
+              <img
+                class="popup__close__label"
+                src="./assets/img/popup-close-black.svg"
+                alt="close"
+              />
+
+              <span class="popup__close__text">Close</span>
+            </button>
+
+            <div class="popup-content popup-about__content">
+              <div class="popup-content__img">
+                <div class="popup-content__img__container">
+                  <img src="./assets/img/popup-about.jpg" alt="about" />
+                </div>
+              </div>
+
+              <div class="popup-content__main">
+                <div class="popup-about__typography typography">
+                  <div>
+                    <h2>О нас</h2>
+                    <h3>Перея</h3>
+                    <h4>Перея</h4>
+
+                    <p>
+                      <a href="#">Перея</a>
+                      <span>Перея</span>
+                      <strong>Перея</strong>
+                      <i>Перея</i>
+                      <ins>Перея</ins>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Corporis incidunt sit dolorum quisquam sunt illo sapiente
+                      tempora voluptas repudiandae impedit.
+                    </p>
+
+                    <ul>
+                      <li>Перея</li>
+                      <li>Перея</li>
+                    </ul>
+
+                    <ol>
+                      <li>Перея</li>
+                      <li>Перея</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="popup popup-video"
+        data-popupname="_popup-video"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="popup__overlay"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper">
+            <button class="popup__close">
+              <img
+                class="popup__close__label"
+                src="./assets/img/popup-close.svg"
+                alt="close"
+              />
+
+              <span class="popup__close__text">Close</span>
+            </button>
+
+            <div class="popup-content popup-video__content">
+              <div class="popup-video__media">
+                <!-- <div class="popup-video__media__container"> -->
+                <video
+                  disablePictureInPicture
+                  preload="auto"
+                  playsinline
+                  controls
+                >
+                  <source src="./assets/video/project.mp4" type="video/mp4" />
+                </video>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="banner-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-slider__img">
+              <div class="banner-slider__img__container">
+                <img src="./assets/img/banner.jpg" alt="banner" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="banner-slider__img">
+              <div class="banner-slider__img__container">
+                <img src="./assets/img/popup-about.jpg" alt="banner" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="banner-slider__img">
+              <div class="banner-slider__img__container">
+                <img src="./assets/img/banner.jpg" alt="banner" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="_container banner__container">
+        <div class="banner__wrapper">
+          <div class="banner-slider-controls">
+            <!-- <button class="slider-banner-prev"></button> -->
+
+            <div class="banner-slider-controls__pagination"></div>
+
+            <button class="slider-banner-next">
+              <img src="./assets/img/arrow-down.svg" alt="next slide" />
+            </button>
+          </div>
+
+          <div class="banner__logo">
+            <img src="./assets/img/logo.svg" alt="logo" />
+          </div>
+
+          <h1 class="banner__title">Fereou Residence клубный жилой комплекс</h1>
+
+          <p class="banner__description">
+            Уникальный проект на берегу Эгейского моря
+            <span> для комфортной жизни и выгодных инвестиций </span>
+          </p>
+        </div>
+
+        <button class="banner-down">
+          <span class="banner-down__bg" aria-hidden="true">
+            <img src="./assets/img/banner-down-bg.svg" alt="bg" />
+          </span>
+
+          <span class="banner-down__label" aria-hidden="true">
+            <img src="./assets/img/arrow-down-black.svg" alt="arrow" />
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="_container">
+        <div class="about__wrapper">
+          <div class="section-header about__header">
+            <h2 class="section-header__title">
+              Перея — стремительно развивающийся пригород салоник
+            </h2>
+          </div>
+
+          <div class="separate">
+            <div class="separate__content about__content">
+              <div class="section-header">
+                <div class="section-header__subtitle">
+                  <p>лучшее место и время для инвестиций</p>
+                </div>
+              </div>
+
+              <div class="typography about__typography">
+                <p>
+                  Перея — это самое перспективное направление вблизи Салоник и
+                  на данный момент приоритетная локация для тех, кто
+                  предпочитает покинуть городскую суету, не теряя при этом
+                  преимущества мегаполиса.
+                </p>
+
+                <p>
+                  Расположенный на южном побережье залива Термайкос,
+                  простирающегося до Олимпа, Перея гармонично сочетает в себе
+                  городскую и курортную инфраструктуру с возможностью проживания
+                  круглый год.
+                </p>
+
+                <p>
+                  Почти двухкилометровый пляж Переи отмечен Голубым флагом,
+                  множество таверн и кафе расположены у самой кромки воды — с
+                  панорамным видом на город Салоники.
+                </p>
+
+                <p>
+                  Инвестиционная привлекательность Переи привлекает все больше
+                  зарубежных инвесторов. В скором времени вблизи Пиреи появится
+                  Thess INTEC Центр инноваций и технологий — научно-технический
+                  парк 4-го поколения.
+                </p>
+              </div>
+            </div>
+
+            <div class="separate__media">
+              <div class="separate-slider-controls">
+                <button class="slider-separate-prev">
+                  <img src="./assets/img/arrow-left.svg" alt="previous slide" />
+                </button>
+
+                <div class="separate-slider-controls__pagination"></div>
+
+                <button class="slider-separate-next">
+                  <img src="./assets/img/arrow-right.svg" alt="next slide" />
+                </button>
+              </div>
+
+              <div class="separate-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a
+                      href="./assets/img/about-1.jpg"
+                      data-fancybox="separate"
+                      class="separate-slider__img"
+                    >
+                      <span class="separate-slider__img__container">
+                        <img src="./assets/img/about-1.jpg" alt="about" />
+                      </span>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <a
+                      href="./assets/img/about-1.jpg"
+                      data-fancybox="separate"
+                      class="separate-slider__img"
+                    >
+                      <span class="separate-slider__img__container">
+                        <img src="./assets/img/about-1.jpg" alt="about" />
+                      </span>
+                    </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <a
+                      href="./assets/img/about-1.jpg"
+                      data-fancybox="separate"
+                      class="separate-slider__img"
+                    >
+                      <span class="separate-slider__img__container">
+                        <img src="./assets/img/about-1.jpg" alt="about" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location _grey">
+      <div class="_container location__container">
+        <div class="location__wrapper">
+          <div class="section-header location__header">
+            <h2 class="section-header__title">локация fereou residence</h2>
+
+            <div class="section-header__subtitle">
+              <p>Уникальное расположение комплекса</p>
+            </div>
+          </div>
+
+          <ul class="location-list">
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Парк развлечений Magic Park
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Самый крупный в Северной Греции торговый центр
+                    “Mediterranean Cosmos”, IKEA, Leroy Merlin.
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Аквапарк Waterland Thessaloniki
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">Центр города Салоники</p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Международный аэропорт Македонии
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Всемирно известные пляжи полуострова Кассандра
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="location-list__item">
+                <div class="location-list__mark">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      class="outer"
+                      cx="13"
+                      cy="13"
+                      r="12.5"
+                      fill="white"
+                      stroke="#501414"
+                    />
+                    <circle
+                      class="inner"
+                      cx="13"
+                      cy="13"
+                      r="3"
+                      fill="#501414"
+                    />
+                  </svg>
+                </div>
+
+                <div class="location-list__content">
+                  <p class="location-list__title">
+                    Центр развития науки и музей технологий “NOISIS”
+                  </p>
+
+                  <div class="location-list-geo">
+                    <div class="location-list-geo__label">
+                      <img src="./assets/img/location-geo.svg" alt="geo" />
+                    </div>
+
+                    <div class="location-list-geo__value">
+                      <span>7,6</span> км
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <p class="location-list__description">
+                <span>fereou residence</span>
+                — идеальный баланс для комфортной жизни.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gallery location__gallery">
+        <div class="gallery-slider-controls">
+          <button class="slider-gallery-prev">
+            <img src="./assets/img/arrow-left.svg" alt="previous slide" />
+          </button>
+
+          <div class="gallery-slider-controls__pagination"></div>
+
+          <button class="slider-gallery-next">
+            <img src="./assets/img/arrow-right.svg" alt="next slide" />
+          </button>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="gallery-slider__img">
+                <span
+                  href="./assets/img/gallery-1.jpg"
+                  data-fancybox="gallery"
+                  class="gallery-slider__img__container"
+                >
+                  <img src="./assets/img/gallery-1.jpg" alt="gallery" />
+                </span>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="gallery-slider__img">
+                <span
+                  href="./assets/img/gallery-1.jpg"
+                  data-fancybox="gallery"
+                  class="gallery-slider__img__container"
+                >
+                  <img src="./assets/img/gallery-1.jpg" alt="gallery" />
+                </span>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="gallery-slider__img">
+                <span
+                  href="./assets/img/gallery-1.jpg"
+                  data-fancybox="gallery"
+                  class="gallery-slider__img__container"
+                >
+                  <img src="./assets/img/gallery-1.jpg" alt="gallery" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="_container">
+        <div class="project__wrapper">
+          <div class="section-header project__header">
+            <h2 class="section-header__title">о проекте</h2>
+          </div>
+
+          <div class="project__content typography">
+            <p>
+              В проекте FEREOU RESIDENCE продумана каждая деталь для личного
+              комфорта, сохранив при этом семейную атмосферу. Здесь есть всё, из
+              чего складывается высокое качество жизни для семейных пар с
+              детьми, для молодых и активных людей и для людей старшего
+              поколения.
+            </p>
+
+            <p>
+              Современная архитектура, передовые технологии — дом создан для
+              тех, кто ценит комфорт, достойное окружение и хочет подчеркнуть
+              свою индивидуальность.
+            </p>
+
+            <p>
+              Четыре 5-этажных здания повышенной комфортности на закрытой
+              территории с видеонаблюдением и подземный паркинг на 54 паковочных
+              места с прямым доступом на лифте.
+            </p>
+
+            <p>
+              <strong>
+                Приобретая квартиру в нашем жилом комплексе, вы не только
+                становитесь обладателем жилого пространства, но и получаете
+                абсолютный комфорт и безопасность.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-video">
+        <div class="project-video__bg">
+          <img src="./assets/img/bg-video.jpg" alt="background video" />
+        </div>
+
+        <button
+          class="project-video-button popup-open"
+          data-popup="_popup-video"
+          aria-label="play video"
+        >
+          <span class="project-video-button__label" aria-hidden="true">
+            <img src="./assets/img/play.svg" alt="play" />
+          </span>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
