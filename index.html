@@ -39,6 +39,30 @@
         </div>
       </div>
 
+      <div class="contact-menu">
+        <button class="contact-menu__open">
+          <img src="./assets/img/calling.svg" alt="calling" />
+        </button>
+
+        <ul class="contact-menu__list">
+          <li>
+            <a href="#" class="contact-menu__link">
+              <img src="./assets/img/whatsapp.svg" alt="whatsapp" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="contact-menu__link">
+              <img src="./assets/img/telegram.svg" alt="telegram" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="contact-menu__link">
+              <img src="./assets/img/mail.svg" alt="mail" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <div
         class="popup popup-menu"
         data-popupname="_popup-menu"
@@ -63,26 +87,46 @@
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="li">
-                    <a href="#" class="menu__item">Перея</a>
+                    <a href="#" data-goto=".about" class="menu__item anchor"
+                      >Перея</a
+                    >
                   </li>
 
                   <li>
-                    <a href="#" class="menu__item">Локация</a>
+                    <a href="#" data-goto=".location" class="menu__item anchor"
+                      >Локация</a
+                    >
                   </li>
                   <li class="li">
-                    <a href="#" class="menu__item">О проекте</a>
+                    <a href="#" data-goto=".project" class="menu__item anchor"
+                      >О проекте</a
+                    >
                   </li>
                   <li class="li">
-                    <a href="#" class="menu__item">Придомовая территория</a>
+                    <a
+                      href="#"
+                      data-goto=".entertainment"
+                      class="menu__item anchor"
+                      >Придомовая территория</a
+                    >
                   </li>
                   <li class="li">
-                    <a href="#" class="menu__item">Преимущества</a>
+                    <a href="#" data-goto=".benefits" class="menu__item anchor"
+                      >Преимущества</a
+                    >
                   </li>
                   <li class="li">
-                    <a href="#" class="menu__item">Квартиры</a>
+                    <a href="#" data-goto=".apartment" class="menu__item anchor"
+                      >Квартиры</a
+                    >
                   </li>
                   <li class="li">
-                    <a href="#" class="menu__item">Галерея</a>
+                    <a
+                      href="#"
+                      data-goto=".apartment__gallery"
+                      class="menu__item anchor"
+                      >Галерея</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -299,32 +343,30 @@
 
               <div class="popup-content__main">
                 <div class="popup-about__typography typography">
-                  <div>
-                    <h2>О нас</h2>
-                    <h3>Перея</h3>
-                    <h4>Перея</h4>
+                  <h2>О нас</h2>
+                  <h3>Перея</h3>
+                  <h4>Перея</h4>
 
-                    <p>
-                      <a href="#">Перея</a>
-                      <span>Перея</span>
-                      <strong>Перея</strong>
-                      <i>Перея</i>
-                      <ins>Перея</ins>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Corporis incidunt sit dolorum quisquam sunt illo sapiente
-                      tempora voluptas repudiandae impedit.
-                    </p>
+                  <p>
+                    <a href="#">Перея</a>
+                    <span>Перея</span>
+                    <strong>Перея</strong>
+                    <i>Перея</i>
+                    <ins>Перея</ins>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corporis incidunt sit dolorum quisquam sunt illo sapiente
+                    tempora voluptas repudiandae impedit.
+                  </p>
 
-                    <ul>
-                      <li>Перея</li>
-                      <li>Перея</li>
-                    </ul>
+                  <ul>
+                    <li>Перея</li>
+                    <li>Перея</li>
+                  </ul>
 
-                    <ol>
-                      <li>Перея</li>
-                      <li>Перея</li>
-                    </ol>
-                  </div>
+                  <ol>
+                    <li>Перея</li>
+                    <li>Перея</li>
+                  </ol>
                 </div>
               </div>
             </div>
@@ -1964,5 +2006,97 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="_container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a href="#" class="logo-link footer__logo">
+              <img src="./assets/img/logo.svg" alt="logo" />
+            </a>
+
+            <button class="popup-open footer__button" data-popup="_popup-about">
+              О нас
+            </button>
+          </div>
+
+          <div class="footer__item">
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <p class="footer-contacts__title">Адрес</p>
+                <a
+                  href="https://goo.gl/maps/cG2qu8GdQ5FMSVHM9"
+                  target="_blank"
+                  class="footer-contacts__link"
+                >
+                  Отдел продаж Riga Fereou 34 , Perea. 57004
+                </a>
+              </li>
+
+              <li class="footer-contacts__item">
+                <p class="footer-contacts__title">Телефон</p>
+                <a href="tel:+30693350000" class="footer-contacts__link"
+                  >+30 693350000</a
+                >
+              </li>
+
+              <li class="footer-contacts__item">
+                <p class="footer-contacts__title">Email</p>
+                <a href="mailto:info@fereou.com" class="footer-contacts__link"
+                  >info@fereou.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <ul class="socials footer__socials">
+              <li>
+                <a href="#" class="socials__item">
+                  <span class="socials__label">
+                    <img
+                      src="./assets/img/socials/facebook.svg"
+                      alt="facebook"
+                    />
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="socials__item">
+                  <span class="socials__label">
+                    <img
+                      src="./assets/img/socials/instagram.svg"
+                      alt="instagram"
+                    />
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="socials__item">
+                  <span class="socials__label">
+                    <img
+                      src="./assets/img/socials/linkedIn.svg"
+                      alt="linkedIn"
+                    />
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="socials__item">
+                  <span class="socials__label">
+                    <img src="./assets/img/socials/youtube.svg" alt="youtube" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <p class="footer__copyrights">© 2023. Fereou Residence.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
